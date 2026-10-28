@@ -136,13 +136,10 @@ Os entregáveis de gerência de projeto ficam em [`docs/`](docs/):
 
 ## 👥 Equipe
 
-| Nome | Papel |
-|---|---|
-
-| Jasmin Andrade Cordeiro | |
-| Eduarda Gomes Camilo | |
-| Guilherme Ferreira Freitas | |
-| Vitor Angelo dos Santos | |
-| João Pedro Barbosa Lima | |
-
-Papéis do projeto: Gerente de Projeto, Analista de Requisitos, Desenvolvedor Flutter, Designer UI/UX e Analista de Testes (QA).
+| Nome |
+|---|
+| Eduarda Gomes Camilo |
+| Guilherme Ferreira Freitas |
+| Jasmin Andrade Cordeiro |
+| João Pedro Barbosa Lima |
+| Vitor Angelo dos Santos |
