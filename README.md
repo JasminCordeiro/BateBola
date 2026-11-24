@@ -110,36 +110,41 @@ Endereço: **https://jasmincordeiro.github.io/batebola/**
 
 ## 🌿 Fluxo de trabalho
 
+- As tarefas ficam nas [issues](https://github.com/JasminCordeiro/BateBola/issues) e no [quadro do projeto](https://github.com/users/JasminCordeiro/projects/4).
 - `main` é a versão publicada e só recebe código por pull request.
-- Cada tarefa é feita em uma branch própria: `feature/agendamento`, `feature/painel`, `fix/limite-reservas` etc.
-- Cada pull request é revisado por pelo menos uma pessoa (QA) antes do merge.
+- Cada tarefa é feita em uma branch própria, com o ID da task: `feature/T27-funcao-reserva`, `fix/T39-limite-reservas` etc.
+- Cada pull request é revisado por pelo menos uma pessoa antes do merge.
 
 Padrão de commit:
 ```
-feat: adiciona tela de horários
-fix: corrige limite de 2 reservas por dia
-docs: atualiza README
+feat(T26): adiciona tela de horários
+fix(T39): corrige limite de 2 reservas por dia
+docs(T50): registra decisões técnicas
 ```
+
+As regras completas estão em [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ---
 
 ## 📄 Documentação do projeto
 
-Os entregáveis de gerência de projeto ficam em [`docs/`](docs/):
+Resumos dos entregáveis de gerência de projeto, em [`docs/`](docs/):
 
-- Documento de visão
-- Gerenciamento do tempo (cronograma e Gantt)
-- Gerenciamento de custos (planilha)
-- Gerenciamento dos riscos
+- [Visão e requisitos](docs/visao.md)
+- [Decisões técnicas](docs/decisoes.md)
+- [Equipe e papéis](docs/equipe.md)
+- [Cronograma](docs/cronograma.md)
+- [Custos](docs/custos.md)
+- [Riscos](docs/riscos.md)
 
 ---
 
 ## 👥 Equipe
 
-| Nome |
-|---|
-| Eduarda Gomes Camilo |
-| Guilherme Ferreira Freitas |
-| Jasmin Andrade Cordeiro |
-| João Pedro Barbosa Lima |
-| Vitor Angelo dos Santos |
+| Nome | Papel |
+|---|---|
+| Eduarda Gomes Camilo | UI/UX Designer |
+| Guilherme Ferreira Freitas | Dev banco de dados / back-end |
+| Jasmin Andrade Cordeiro | Product Manager e Dev geral |
+| João Pedro Barbosa Lima | Dev geral (integração e qualidade) |
+| Vitor Angelo dos Santos | Dev front-end |
