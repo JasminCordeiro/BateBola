@@ -1,0 +1,38 @@
+name: Bug
+description: Um defeito encontrado nos testes ou no uso
+title: "Bug: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: passos
+    attributes:
+      label: Passos para reproduzir
+      placeholder: |
+        1. Abrir a Quadra 1
+        2. Escolher 20/11/2026
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: O que deveria acontecer
+    validations:
+      required: true
+  - type: textarea
+    id: aconteceu
+    attributes:
+      label: O que aconteceu
+      description: Se possível, inclua um print.
+    validations:
+      required: true
+  - type: input
+    id: ambiente
+    attributes:
+      label: Navegador e aparelho
+      placeholder: "Chrome no Android / Safari no iPhone / Edge no Windows"
+  - type: input
+    id: cenario
+    attributes:
+      label: Cenário de teste ou task relacionada
+      placeholder: "CT04, T27"

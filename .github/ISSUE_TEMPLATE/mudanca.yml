@@ -1,0 +1,47 @@
+name: Solicitação de mudança
+description: Pedido para mudar escopo, prazo ou custo do projeto
+title: "Mudança: "
+labels: ["mudanca"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Toda mudança de escopo ou prazo passa por aqui antes de virar código (risco R10).
+        A PM avalia o impacto com o grupo e registra a decisão nesta issue.
+  - type: textarea
+    id: descricao
+    attributes:
+      label: O que se pede
+    validations:
+      required: true
+  - type: input
+    id: solicitante
+    attributes:
+      label: Quem pediu
+    validations:
+      required: true
+  - type: textarea
+    id: motivo
+    attributes:
+      label: Por quê
+    validations:
+      required: true
+  - type: textarea
+    id: impacto
+    attributes:
+      label: Impacto estimado
+      description: Preenchido na análise. Horas, tasks afetadas, marcos e riscos.
+      placeholder: |
+        - Esforço: X h
+        - Tasks afetadas: ...
+        - Impacto no M2 / M3: ...
+        - Riscos novos ou alterados: ...
+  - type: dropdown
+    id: decisao
+    attributes:
+      label: Decisão
+      options:
+        - Em análise
+        - Aprovada
+        - Rejeitada
+        - Adiada para a versão 2

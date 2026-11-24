@@ -1,0 +1,50 @@
+name: Task
+description: Uma atividade do backlog (até 2 dias de trabalho)
+title: "TXX – "
+body:
+  - type: textarea
+    id: pronto
+    attributes:
+      label: Pronto quando
+      description: O resultado que pode ser verificado ao final da task.
+    validations:
+      required: true
+  - type: textarea
+    id: criterios
+    attributes:
+      label: Critérios de aceitação
+      description: No formato Dado / Quando / Então, quando a task entrega uma história de usuário.
+      placeholder: |
+        - **Dado** que ...
+        - **Quando** ...
+        - **Então** ...
+  - type: dropdown
+    id: papel
+    attributes:
+      label: Papel
+      options:
+        - Product Manager
+        - UI/UX Designer
+        - Dev banco de dados / back-end
+        - Dev geral (integração e qualidade)
+        - Dev front-end
+    validations:
+      required: true
+  - type: input
+    id: estimativa
+    attributes:
+      label: Estimativa (h)
+      placeholder: "4"
+    validations:
+      required: true
+  - type: input
+    id: rastreio
+    attributes:
+      label: Rastreio
+      description: HU, RF, RNF, CT ou risco relacionados.
+      placeholder: "HU03, RF03, CT03, R01"
+  - type: input
+    id: depende
+    attributes:
+      label: Depende de
+      placeholder: "T14, T15"
