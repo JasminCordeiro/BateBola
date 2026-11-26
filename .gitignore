@@ -1,0 +1,9 @@
+# Ignore
+node_modules
+
+# Supabase
+supabase/.temp
+
+# Environment
+.env*
+env.json
